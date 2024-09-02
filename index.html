@@ -10,30 +10,156 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        Dashboard
+        <div class="h_card">
+          <img
+            src="icons/view-dashboard.svg"
+            alt="Dashboard"
+            width="32px"
+            height="32px"
+          />
+          Dashboard
+        </div>
         <div class="menu">
           <div class="boardMenu">
             <ul>
-              <li>Home</li>
-              <li>Profile</li>
-              <li>Message</li>
-              <li>History</li>
-              <li>Tasks</li>
-              <li>Communities</li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/home.svg"
+                    alt="home"
+                    width="20px"
+                    height="20px"
+                  />
+                  Home
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/profile.svg"
+                    alt="profile"
+                    width="20px"
+                    height="20px"
+                  />
+                  Profile
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/message.svg"
+                    alt="message"
+                    width="20px"
+                    height="20px"
+                  />
+                  Message
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/history.svg"
+                    alt="history"
+                    width="20px"
+                    height="20px"
+                  />
+                  History
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/tasks.svg"
+                    alt="tasks"
+                    width="20px"
+                    height="20px"
+                  />
+                  Tasks
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/community.svg"
+                    alt="community"
+                    width="20px"
+                    height="20px"
+                  />
+                  Communities
+                </div>
+              </li>
             </ul>
           </div>
           <div class="platformMenu">
             <ul>
-              <li>Settings</li>
-              <li>Support</li>
-              <li>Privacy</li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/settings.svg"
+                    alt="settings"
+                    width="20px"
+                    height="20px"
+                  />
+                  Settings
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/support.svg"
+                    alt="support"
+                    width="20px"
+                    height="20px"
+                  />
+                  Support
+                </div>
+              </li>
+              <li>
+                <div class="m_card">
+                  <img
+                    src="icons/privacy.svg"
+                    alt="privacy"
+                    width="20px"
+                    height="20px"
+                  />
+                  Privacy
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="header">
-        <div class="search"></div>
-        <div class="profile"></div>
+        <div class="search">
+          <form action="search" method="get">
+            <button type="submit" id="search">
+              <img
+                src="icons/search.svg"
+                alt="search"
+                height="16px"
+                width="16px"
+              />
+            </button>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="input project name"
+            />
+          </form>
+        </div>
+        <div class="profile">
+          <button id="bell">
+            <img
+              src="icons/bell-ring.svg"
+              alt="bell-ring"
+              height="16px"
+              width="16px"
+            />
+          </button>
+          <button id="my_profile">P</button>
+          <button id="my_profile_name">Dmitriy Kislyakov</button>
+        </div>
         <div class="greeting"></div>
         <div class="buttons"></div>
       </div>
