@@ -5,6 +5,10 @@ html {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -57,6 +61,60 @@ ul {
   box-shadow: -100 -5px 5px -3px rgba(0, 0, 0, 0),
     0 -5px 5px -3px rgba(0, 0, 0, 0), inset 5px 0 5px -3px rgba(0, 0, 0, 0.5),
     inset 5px 0 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 5px;
+  padding: 20px;
+}
+
+form > button,
+.profile > #bell {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+form > input {
+  border-radius: 10px;
+  padding: 3px 20px;
+  background-color: lightgrey;
+  border: 0px;
+}
+
+.profile {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
+
+#my_profile {
+  border: 0px;
+  width: 40px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 180px;
+}
+
+#my_profile img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#my_profile p {
+  width: auto;
+  vertical-align: top;
+  margin: 5px;
+  font-size: 1rem;
 }
 
 .workspace {
