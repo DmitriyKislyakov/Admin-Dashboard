@@ -91,7 +91,7 @@ form > input {
   padding: 20px;
   grid-template-columns: 1fr 4fr;
   gap: 0px;
-  align-items: top ;
+  align-items: top;
 }
 
 #my_profile {
@@ -101,7 +101,6 @@ form > input {
   background-color: rgba(0, 0, 0, 0);
   display: grid;
   grid-template-columns: 1fr 180px;
-  
 }
 
 #my_profile img {
@@ -119,14 +118,14 @@ form > input {
   font-size: 1rem;
 }
 
-.greeting{
+.greeting {
   display: grid;
   grid-template-columns: 60px 1fr;
   padding: 0px 20px;
   gap: 15px;
 }
 
-.greeting img{
+.greeting img {
   width: 50px;
   height: 50px;
   object-fit: cover;
@@ -134,18 +133,19 @@ form > input {
   border: 1px solid black;
 }
 
-.greeting p, .greeting h3{
+.greeting p,
+.greeting h3 {
   margin: 3px;
 }
 
-.buttons{
+.buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
 
-.buttons button{
+.buttons button {
   color: white;
   background-color: #38bdf8;
   border: 0;
@@ -153,8 +153,6 @@ form > input {
   padding: 10px;
   width: 90px;
   height: 40px;
-
-  
 }
 
 .workspace {
@@ -168,22 +166,22 @@ form > input {
   padding: 10px 15px 30px 15px;
 }
 
-.workspace h3{
+.workspace h3 {
   margin: 3px;
 }
 
-.projects{
+.projects {
   grid-row: span 2;
 }
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
 }
 
-.card{
+.card {
   display: grid;
   background: linear-gradient(to right, orange 0 10px, white 10px);
   border-radius: 20px;
@@ -192,12 +190,12 @@ form > input {
   height: 300px;
 }
 
-.card_field{
+.card_field {
   grid-row: span 2;
   grid-column: 1;
 }
 
-.card_text{
+.card_text {
   grid-row: 1;
   grid-column: span 2 / -1;
   overflow: hidden;
@@ -205,11 +203,12 @@ form > input {
   padding: 15px;
 }
 
-.card_text h4, .card_text p{
+.card_text h4,
+.card_text p {
   margin: 10px;
 }
 
-.card_icons{
+.card_icons {
   grid-row: 2 / 3;
   grid-column: -1 / -2;
   display: grid;
@@ -217,22 +216,24 @@ form > input {
   padding-top: 15px;
 }
 
-.projects, .announcements, .trending{
+.projects,
+.announcements,
+.trending {
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-.right_card{
+.right_card {
   background-color: white;
   border-radius: 20px;
 }
 
-.announcements>.right_card{
+.announcements > .right_card {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.topic{
+.topic {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 5px;
@@ -244,16 +245,16 @@ form > input {
   margin-bottom: 0;
 }
 
-.topic p{
-  margin: 5px
+.topic p {
+  margin: 5px;
 }
 
-.trending>.right_card{
+.trending > .right_card {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
 }
 
-#account{
+#account {
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin: 20px;
@@ -263,20 +264,20 @@ form > input {
   border: 0px;
 }
 
-.account_image{
-  grid-column: 1;
-  border-radius: 50%;
-  border: solid 1px;
-  height: 30px;
+.account_image img {
   width: 30px;
-  vertical-align: bottom
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
-.account_text{
+.account_text {
   grid-column: 2;
   text-align: left;
 }
 
-.account_info h4, .account_info p{
-  margin: 3px
+.account_info h4,
+.account_info p {
+  margin: 3px;
 }
