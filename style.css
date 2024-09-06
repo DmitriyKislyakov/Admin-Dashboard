@@ -152,6 +152,7 @@ form > input {
   border-radius: 20px;
   padding: 10px;
   width: 90px;
+  height: 40px;
 
   
 }
@@ -187,7 +188,8 @@ form > input {
   background: linear-gradient(to right, orange 0 10px, white 10px);
   border-radius: 20px;
   grid-template-columns: 10px 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  height: 300px;
 }
 
 .card_field{
@@ -198,11 +200,21 @@ form > input {
 .card_text{
   grid-row: 1;
   grid-column: span 2 / -1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px;
+}
+
+.card_text h4, .card_text p{
+  margin: 10px;
 }
 
 .card_icons{
   grid-row: 2 / 3;
   grid-column: -1 / -2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 15px;
 }
 
 .projects, .announcements, .trending{
@@ -213,4 +225,58 @@ form > input {
 .right_card{
   background-color: white;
   border-radius: 20px;
+}
+
+.announcements>.right_card{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.topic{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+  padding: 5px;
+}
+
+.topic h4 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.topic p{
+  margin: 5px
+}
+
+.trending>.right_card{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#account{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 20px;
+  padding: 5px 20px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+}
+
+.account_image{
+  grid-column: 1;
+  border-radius: 50%;
+  border: solid 1px;
+  height: 30px;
+  width: 30px;
+  vertical-align: bottom
+}
+
+.account_text{
+  grid-column: 2;
+  text-align: left;
+}
+
+.account_info h4, .account_info p{
+  margin: 3px
 }
